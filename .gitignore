@@ -1,0 +1,9 @@
+.DS_Store
+.history.idea
+.idea_modules
+.idea
+project/boot
+target
+project/target
+.history
+src/main/generated_scala
