@@ -1,0 +1,21 @@
+package contacts;
+
+option java_outer_classname = "JavaAPI";
+option scala_outer_classname = "ScalaAPI";
+
+option java_package = "javaapi";
+option scala_package = "scalaapi";
+
+message Person {
+    required string name = 1;
+    required int32 age = 2;
+    optional Address primary_address = 3;
+    repeated Address secondary_addresses = 4;
+}
+
+message Address {
+    required string country = 1;
+    required string city = 2;
+    required string zip = 3;
+    required string street = 4;
+}
